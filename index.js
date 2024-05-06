@@ -14,4 +14,5 @@ function signOut()) {
         $(".g-signin2").css("display", "block");
         $(".data").css("display", "none");
     ));
+"redirect_uri":"https://haaletus.eu/profile.html",
 }
