@@ -13,3 +13,17 @@ function signIn(){
     "include_granted_scopes":'true',
     'state':'pass-through-value'
 }
+
+for(var p in params){
+  let input = document.createElement('input')
+  input.setAttribute('type', 'hidden')
+  input.setAttribute('name', p)
+  input.setAttribute('value',params[p])
+  form.appendChild(input)
+}
+
+  document.body.appendChild(form)
+
+  form.submit()
+}
+  
