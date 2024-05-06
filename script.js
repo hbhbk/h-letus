@@ -1,28 +1,17 @@
-function signIn(){
-    let oauth2Endpoint = "https://accounts.google.com/o/oauth2/v2/auth"
+function onSignIn(googleuser) {
+    var profile = googleUser.getBasicProfile();
+    $("#name").text(profile.getName());
+    $("#email").text(profile.getEmail());
+    $("#image").attr('src', profile.getImageUrl());
+    $(".data").css("display", "block");
+    $(".g-signin2").css("display", "none");
+}
 
-    let form = document.createElement('form')
-    form.setAttribute('method','GET')
-    form.setAttribute('action',oauth2Endpoint)
-
-    let params = {
-        "client_id":"899421234400-9sp8p4b0ltnpm57bjlljcavmp9ng34lt.apps.googleusercontent.com",
-        "redirect_uri":"http://127.0.0.1:5500/google_login/profile.html",
-        "response_type":"token",
-        "scope":"https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly",
-        "include_granted_scopes": 'true',
-       'state': 'pass-through-value'
-    }
-
-    for(var p in params){
-        let input = document.createElement('input');
-        input.setAttribute('type','hidden');
-        input.setAttribute('name',p);
-        input.setAttribute('value', params[p]);
-        form.appendChild(input);
-    }
-    
-    document.body.appendChild(form);
-
-    form.submit();
+function signOut()) {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+        alert("You have been signed out");
+        $(".g-signin2").css("display", "block");
+        $(".data").css("display", "none");
+    ));
 }
