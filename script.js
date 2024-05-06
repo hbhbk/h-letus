@@ -7,7 +7,7 @@ function signIn(){
 
   let params = {
     "114914436737-ig4ra5gite62k2n7ud064i0sqt7esdl3.apps.googleusercontent.com":"",
-    "redirect_uri":"",
+    "redirect_uri":"https://haaletus.eu/profile.html",
     "response_type":"token",
     "scope":"https://www.googleapis.com/auth/userinfo.profile",
     "include_granted_scopes":'true',
