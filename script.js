@@ -7,7 +7,7 @@ function signIn(){
 
     let params = {
         "client_id":"899421234400-9sp8p4b0ltnpm57bjlljcavmp9ng34lt.apps.googleusercontent.com",
-        "redirect_uri":"http://127.0.0.1:5500/google_login/profile.html",
+        "redirect_uri":"http://haaletus.euprofile.html",
         "response_type":"token",
         "scope":"https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly",
         "include_granted_scopes": 'true',
