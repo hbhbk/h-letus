@@ -1,0 +1,85 @@
+ #img1{
+    height: 600px;
+    width: 400px;
+
+    position: absolute;
+    top: 50px;
+    left: 550px;
+    
+}
+
+#Google{
+    width: 300px;
+    height: 50px;
+    border: 100px;
+
+    position: absolute;
+    top: 150px;
+    left: 600px;
+}
+
+#Or{
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    top: 225px;
+    left: 730px;
+    color: white;
+
+}
+
+#username{
+    width: 300px;
+    height: 30px;
+
+    position: absolute;
+    top: 300px;
+    left: 595px;
+}
+#password{
+    width: 300px;
+    height: 30px;
+
+    position: absolute;
+    top: 350px;
+    left: 595px;
+}
+#Forgot{
+    width: 125px;
+    height: 20px;
+
+    position: absolute;
+    top: 470px;
+    left: 680px;
+
+}
+
+#with{
+    width: 200px;
+    height: 30px;
+
+    position: absolute;
+    top: 60px;
+    left: 685px;
+
+    color: white;
+}
+
+#Login{
+    width: 200px;
+    height: 30px;
+
+    position: absolute;
+    top: 430px;
+    left: 640px;
+}
+
+#remember_me{
+    width: 200px;
+    height: 15px;
+
+    position: absolute;
+    top: 390px;
+    left: 500px;
+}
